@@ -13,5 +13,8 @@ require('./bootstrap');
  */
 
 //require('./components/Example');
+require('./components/ProductItem');
 require('./components/Product');
 require('./components/ProductList');
+require('./components/Object');
+require('./components/ObjectList');

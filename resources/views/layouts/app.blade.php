@@ -35,7 +35,17 @@
                     <ul class="navbar-nav me-auto">
                           <li class="nav-item">
                               <a href="{{route('product.index')}}" class="nav-link">
-                                Products
+                                Product list
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="{{route('warehouse.index')}}" class="nav-link">
+                                Warehouses
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="{{route('store.index')}}" class="nav-link">
+                                Stores
                               </a>
                           </li>
                     </ul>

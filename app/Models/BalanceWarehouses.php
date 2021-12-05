@@ -9,11 +9,16 @@ class BalanceWarehouses extends Model
 {
     use HasFactory;
 
-    protected $table = 'balance_warehouse';
-    protected $fillable = ['product_id', 'warehouse_id'];
+    protected $table = 'balance_warehouses';
+    protected $fillable = ['product_id', 'warehouses_id', 'count'];
 
     public function warehouse()
     {
         return $this->belongsTo(Warehouse::class);
+    }
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
     }
 }

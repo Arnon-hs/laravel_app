@@ -10,7 +10,7 @@ class Store extends Model
     use HasFactory;
 
     protected $table = 'stores';
-    protected $fillable = ['name', 'address'];
+    protected $fillable = ['name', 'address', 'image'];
 
     public function balance()
     {

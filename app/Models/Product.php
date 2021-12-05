@@ -10,7 +10,15 @@ class Product extends Model
     use HasFactory;
 
     protected $table = 'products';
-    protected $fillable = ['name', 'address'];
+    protected $fillable = ['name', 'description', 'image', 'price'];
 
-    
+    public function BalanceWarehouses()
+    {
+        return $this->hasMany(BalanceWarehouses::class);
+    }
+
+    public function BalanceStores()
+    {
+        return $this->hasMany(BalanceStores::class);
+    }
 }
