@@ -34,7 +34,7 @@ class ProductController extends Controller
         $product['balance_warehouses'][$key]['warehouse'] = Warehouse::where(['id'=> $value['warehouses_id']])->get()->first()->toArray();
         $product['balance_warehouses'][$key]['count'] = $value['count'];
       }
-      // dd($product);
+      
       return view('product.show', compact('product'));
   }
 }
